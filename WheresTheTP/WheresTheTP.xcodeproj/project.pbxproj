@@ -496,7 +496,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonahstarling.WheresTheTP;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WheresTheTP;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -515,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonahstarling.WheresTheTP;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WheresTheTP;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
