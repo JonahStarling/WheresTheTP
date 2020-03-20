@@ -1,0 +1,6 @@
+framework module Pods_WheresTheTPTests {
+  umbrella header "Pods-WheresTheTPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

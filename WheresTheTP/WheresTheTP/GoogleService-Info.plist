@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>72766779913-3apjfdod8pupm12441ho35in4904ep2f.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.72766779913-3apjfdod8pupm12441ho35in4904ep2f</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBwagsDI5ux4wc9rEp9QeUfkeE1liwmpd8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>72766779913</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jonahstarling.WheresTheTP</string>
+	<key>PROJECT_ID</key>
+	<string>wheresthetp-337</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wheresthetp-337.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:72766779913:ios:31854a883e4b5c8d30bed8</string>
+	<key>DATABASE_URL</key>
+	<string>https://wheresthetp-337.firebaseio.com</string>
+</dict>
+</plist>
