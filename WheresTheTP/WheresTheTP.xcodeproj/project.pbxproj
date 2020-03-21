@@ -11,13 +11,18 @@
 		5C1CC368439E7C9146573BD2 /* Pods_WheresTheTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B9851A9BC07D2780511C1B /* Pods_WheresTheTP.framework */; };
 		8CFD619624253B7D00E5B0EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619524253B7D00E5B0EE /* AppDelegate.swift */; };
 		8CFD619824253B7D00E5B0EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619724253B7D00E5B0EE /* SceneDelegate.swift */; };
-		8CFD619A24253B7D00E5B0EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619924253B7D00E5B0EE /* ViewController.swift */; };
+		8CFD619A24253B7D00E5B0EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619924253B7D00E5B0EE /* HomeViewController.swift */; };
 		8CFD619D24253B7D00E5B0EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD619B24253B7D00E5B0EE /* Main.storyboard */; };
 		8CFD619F24253B8100E5B0EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD619E24253B8100E5B0EE /* Assets.xcassets */; };
 		8CFD61A224253B8100E5B0EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD61A024253B8100E5B0EE /* LaunchScreen.storyboard */; };
 		8CFD61AD24253B8100E5B0EE /* WheresTheTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD61AC24253B8100E5B0EE /* WheresTheTPTests.swift */; };
 		8CFD61B824254B2900E5B0EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD61B724254B2900E5B0EE /* GoogleService-Info.plist */; };
 		8CFD61BC24255B5C00E5B0EE /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD61BB24255B5C00E5B0EE /* Keys.swift */; };
+		8CFD61BE24259CFC00E5B0EE /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CFD61BD24259CFC00E5B0EE /* style.json */; };
+		8CFD61C02425A24A00E5B0EE /* TPPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD61BF2425A24A00E5B0EE /* TPPlace.swift */; };
+		8CFD61C62425A35A00E5B0EE /* GooglePlacesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD61C52425A35A00E5B0EE /* GooglePlacesServices.swift */; };
+		8CFD61C82425A37F00E5B0EE /* TPServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD61C72425A37F00E5B0EE /* TPServices.swift */; };
+		8CFD61CA2425A3A200E5B0EE /* TPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD61C92425A3A200E5B0EE /* TPRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 		8CFD619224253B7D00E5B0EE /* WheresTheTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheresTheTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFD619524253B7D00E5B0EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CFD619724253B7D00E5B0EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CFD619924253B7D00E5B0EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CFD619924253B7D00E5B0EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8CFD619C24253B7D00E5B0EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CFD619E24253B8100E5B0EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CFD61A124253B8100E5B0EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +53,11 @@
 		8CFD61AE24253B8100E5B0EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CFD61B724254B2900E5B0EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CFD61BB24255B5C00E5B0EE /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		8CFD61BD24259CFC00E5B0EE /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		8CFD61BF2425A24A00E5B0EE /* TPPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPPlace.swift; sourceTree = "<group>"; };
+		8CFD61C52425A35A00E5B0EE /* GooglePlacesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesServices.swift; sourceTree = "<group>"; };
+		8CFD61C72425A37F00E5B0EE /* TPServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPServices.swift; sourceTree = "<group>"; };
+		8CFD61C92425A3A200E5B0EE /* TPRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPRepository.swift; sourceTree = "<group>"; };
 		D1BCEAE9CE33DCA5E741F13C /* Pods_WheresTheTPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheresTheTPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE365F1A10687892FEE60CA /* Pods-WheresTheTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheresTheTP.release.xcconfig"; path = "Target Support Files/Pods-WheresTheTP/Pods-WheresTheTP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,15 +114,19 @@
 		8CFD619424253B7D00E5B0EE /* WheresTheTP */ = {
 			isa = PBXGroup;
 			children = (
+				8CFD61C42425A33F00E5B0EE /* Services */,
+				8CFD61C32425A32D00E5B0EE /* Repository */,
+				8CFD61C22425A32300E5B0EE /* Data */,
+				8CFD61C12425A2F800E5B0EE /* UI */,
 				8CFD619524253B7D00E5B0EE /* AppDelegate.swift */,
 				8CFD619724253B7D00E5B0EE /* SceneDelegate.swift */,
-				8CFD619924253B7D00E5B0EE /* ViewController.swift */,
 				8CFD619B24253B7D00E5B0EE /* Main.storyboard */,
-				8CFD619E24253B8100E5B0EE /* Assets.xcassets */,
 				8CFD61A024253B8100E5B0EE /* LaunchScreen.storyboard */,
+				8CFD61BB24255B5C00E5B0EE /* Keys.swift */,
 				8CFD61A324253B8100E5B0EE /* Info.plist */,
 				8CFD61B724254B2900E5B0EE /* GoogleService-Info.plist */,
-				8CFD61BB24255B5C00E5B0EE /* Keys.swift */,
+				8CFD61BD24259CFC00E5B0EE /* style.json */,
+				8CFD619E24253B8100E5B0EE /* Assets.xcassets */,
 			);
 			path = WheresTheTP;
 			sourceTree = "<group>";
@@ -124,6 +138,39 @@
 				8CFD61AE24253B8100E5B0EE /* Info.plist */,
 			);
 			path = WheresTheTPTests;
+			sourceTree = "<group>";
+		};
+		8CFD61C12425A2F800E5B0EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8CFD619924253B7D00E5B0EE /* HomeViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8CFD61C22425A32300E5B0EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8CFD61BF2425A24A00E5B0EE /* TPPlace.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8CFD61C32425A32D00E5B0EE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8CFD61C92425A3A200E5B0EE /* TPRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8CFD61C42425A33F00E5B0EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8CFD61C52425A35A00E5B0EE /* GooglePlacesServices.swift */,
+				8CFD61C72425A37F00E5B0EE /* TPServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CAD6C76696D9443A674DBEE8 /* Pods */ = {
@@ -225,6 +272,7 @@
 				8CFD61A224253B8100E5B0EE /* LaunchScreen.storyboard in Resources */,
 				8CFD61B824254B2900E5B0EE /* GoogleService-Info.plist in Resources */,
 				8CFD619F24253B8100E5B0EE /* Assets.xcassets in Resources */,
+				8CFD61BE24259CFC00E5B0EE /* style.json in Resources */,
 				8CFD619D24253B7D00E5B0EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,10 +372,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CFD619A24253B7D00E5B0EE /* ViewController.swift in Sources */,
+				8CFD619A24253B7D00E5B0EE /* HomeViewController.swift in Sources */,
+				8CFD61CA2425A3A200E5B0EE /* TPRepository.swift in Sources */,
 				8CFD61BC24255B5C00E5B0EE /* Keys.swift in Sources */,
+				8CFD61C62425A35A00E5B0EE /* GooglePlacesServices.swift in Sources */,
+				8CFD61C02425A24A00E5B0EE /* TPPlace.swift in Sources */,
 				8CFD619624253B7D00E5B0EE /* AppDelegate.swift in Sources */,
 				8CFD619824253B7D00E5B0EE /* SceneDelegate.swift in Sources */,
+				8CFD61C82425A37F00E5B0EE /* TPServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
