@@ -11,6 +11,8 @@ import GoogleMaps
 import GooglePlaces
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
+    
+    static let locationManager = CLLocationManager()
 
     override func loadView() {
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
@@ -32,11 +34,27 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        getUserLocation()
+    }
+    
+    func getUserLocation() {
+        if !CLLocationManager.locationServicesEnabled() {
+            getLocationPermission(locationManager: HomeViewController.locationManager)
+        }
+        
+        if CLLocationManager.locationServicesEnabled() {
+            HomeViewController.locationManager.delegate = self
+            HomeViewController.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            HomeViewController.locationManager.startUpdatingLocation()
+        }
+    }
+    
+    func getLocationPermission(locationManager: CLLocationManager) {
+        locationManager.requestWhenInUseAuthorization()
     }
     
     func loadNearbyTP() {
