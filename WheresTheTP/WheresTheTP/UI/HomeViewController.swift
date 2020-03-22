@@ -12,28 +12,14 @@ import GooglePlaces
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
+    var mapView: GMSMapView?
+    
     static let locationManager = CLLocationManager()
-
-    override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        mapView.delegate = self
-        mapView.isMyLocationEnabled = true
-        do {
-            // Set the map style by passing the URL of the local file.
-            if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
-                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
-            } else {
-                NSLog("Unable to find style.json")
-            }
-        } catch {
-            NSLog("One or more of the map styles failed to load. \(error)")
-        }
-        view = mapView
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadMapView()
+        loadDummyData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -57,6 +43,43 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         locationManager.requestWhenInUseAuthorization()
     }
     
+    func loadDummyData() {
+        let lat = 38.641919
+        let lon = -90.261528
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
+        marker.userData = "testPlace"
+        marker.map = mapView
+    }
+    
+    func loadMapView() {
+        let camera = GMSCameraPosition.camera(withLatitude: 38.640933, longitude: -90.262504, zoom: 4.0)
+        let gmsMapView = GMSMapView.map(withFrame: view.frame, camera: camera)
+        gmsMapView.delegate = self
+        gmsMapView.isMyLocationEnabled = true
+        gmsMapView.setMinZoom(4.0, maxZoom: 16.0)
+        gmsMapView.isBuildingsEnabled = false
+        do {
+            // Set the map style by passing the URL of the local file.
+            if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
+                gmsMapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+            } else {
+                NSLog("Unable to find style.json")
+            }
+        } catch {
+            NSLog("One or more of the map styles failed to load. \(error)")
+        }
+        mapView = gmsMapView
+        view.addSubview(mapView!)
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        if let placeId = marker.userData as? String {
+            placeTapped(id: placeId)
+        }
+        return false
+    }
+    
     func loadNearbyTP() {
         // TODO
         // This function should call the TPRepository and get the nearby TP
@@ -64,9 +87,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         // Then the places ids are used to fetch the stock value from Firebase
     }
     
-    func placeTapped() {
+    func placeTapped(id: String) {
         // TODO
         // When a place is tapped we popup the place ui
+        // showPlace(place: place)
     }
     
     func showPlace(place: TPPlace) {
