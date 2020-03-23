@@ -135,6 +135,12 @@
                         <viewLayoutGuide key="safeArea" id="MKG-cz-hgd"/>
                     </view>
                     <connections>
+                        <outlet property="leftHand" destination="iQi-Wy-aob" id="gap-7C-3h8"/>
+                        <outlet property="leftTP" destination="NyZ-5u-Ciw" id="Tk2-JJ-pw8"/>
+                        <outlet property="rightHand" destination="eDi-qD-Dsr" id="oX4-WN-dZw"/>
+                        <outlet property="rightTP" destination="5yU-h5-vj3" id="UGg-vF-R3B"/>
+                        <outlet property="topHand" destination="vtC-N9-RG8" id="h2Q-vq-0m3"/>
+                        <outlet property="topTP" destination="fis-yX-VDg" id="nur-bc-yzJ"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="LaunchToHome" animates="NO" modalPresentationStyle="fullScreen" id="9aC-NP-Nx4"/>
                     </connections>
                 </viewController>

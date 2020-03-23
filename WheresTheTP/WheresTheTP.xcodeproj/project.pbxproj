@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2609CB989022D90AFB711EEE /* Pods_WheresTheTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BCEAE9CE33DCA5E741F13C /* Pods_WheresTheTPTests.framework */; };
 		5C1CC368439E7C9146573BD2 /* Pods_WheresTheTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B9851A9BC07D2780511C1B /* Pods_WheresTheTP.framework */; };
-		8C9C0568242830CC000F4DCC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C0567242830CC000F4DCC /* LaunchViewController.swift */; };
+		8C9C056A24284E9E000F4DCC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C056924284E9E000F4DCC /* LaunchViewController.swift */; };
 		8CFD619624253B7D00E5B0EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619524253B7D00E5B0EE /* AppDelegate.swift */; };
 		8CFD619824253B7D00E5B0EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619724253B7D00E5B0EE /* SceneDelegate.swift */; };
 		8CFD619A24253B7D00E5B0EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619924253B7D00E5B0EE /* HomeViewController.swift */; };
@@ -41,7 +41,7 @@
 		5DC345D7C7F7BF0B0B03CD8B /* Pods-WheresTheTPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheresTheTPTests.debug.xcconfig"; path = "Target Support Files/Pods-WheresTheTPTests/Pods-WheresTheTPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7480C5CE61D305BBE8045D1E /* Pods-WheresTheTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheresTheTP.debug.xcconfig"; path = "Target Support Files/Pods-WheresTheTP/Pods-WheresTheTP.debug.xcconfig"; sourceTree = "<group>"; };
 		8192DF4765E79A5300B5BBE2 /* Pods-WheresTheTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheresTheTPTests.release.xcconfig"; path = "Target Support Files/Pods-WheresTheTPTests/Pods-WheresTheTPTests.release.xcconfig"; sourceTree = "<group>"; };
-		8C9C0567242830CC000F4DCC /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		8C9C056924284E9E000F4DCC /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		8CFD619224253B7D00E5B0EE /* WheresTheTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheresTheTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFD619524253B7D00E5B0EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CFD619724253B7D00E5B0EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		8CFD61C12425A2F800E5B0EE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				8C9C0567242830CC000F4DCC /* LaunchViewController.swift */,
+				8C9C056924284E9E000F4DCC /* LaunchViewController.swift */,
 				8CFD619924253B7D00E5B0EE /* HomeViewController.swift */,
 			);
 			path = UI;
@@ -382,7 +382,7 @@
 				8CFD61C02425A24A00E5B0EE /* TPPlace.swift in Sources */,
 				8CFD619624253B7D00E5B0EE /* AppDelegate.swift in Sources */,
 				8CFD619824253B7D00E5B0EE /* SceneDelegate.swift in Sources */,
-				8C9C0568242830CC000F4DCC /* LaunchViewController.swift in Sources */,
+				8C9C056A24284E9E000F4DCC /* LaunchViewController.swift in Sources */,
 				8CFD61C82425A37F00E5B0EE /* TPServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

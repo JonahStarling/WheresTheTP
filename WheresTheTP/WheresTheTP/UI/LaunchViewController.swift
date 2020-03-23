@@ -12,6 +12,13 @@ import FirebaseAuth
 
 class LaunchViewController: UIViewController {
     
+    @IBOutlet weak var topHand: UIImageView!
+    @IBOutlet weak var rightHand: UIImageView!
+    @IBOutlet weak var leftHand: UIImageView!
+    @IBOutlet weak var topTP: UIImageView!
+    @IBOutlet weak var rightTP: UIImageView!
+    @IBOutlet weak var leftTP: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +49,7 @@ class LaunchViewController: UIViewController {
         animations: {
             
             self.view.layoutIfNeeded()
-        }, completion: {
+        }, completion: { _ in
             self.animateTopHandOut()
         })
     }
@@ -52,7 +59,7 @@ class LaunchViewController: UIViewController {
         animations: {
             
             self.view.layoutIfNeeded()
-        }, completion: {
+        }, completion: { _ in
             // TODO: Should anything happen on completion
         })
     }
@@ -62,7 +69,7 @@ class LaunchViewController: UIViewController {
         animations: {
             
             self.view.layoutIfNeeded()
-        }, completion: {
+        }, completion: { _ in
             self.animateTopHandOut()
         })
     }
@@ -72,7 +79,7 @@ class LaunchViewController: UIViewController {
         animations: {
             
             self.view.layoutIfNeeded()
-        }, completion: {
+        }, completion: { _ in
             // TODO: Should anything happen on completion
         })
     }
@@ -82,7 +89,7 @@ class LaunchViewController: UIViewController {
         animations: {
             
             self.view.layoutIfNeeded()
-        }, completion: {
+        }, completion: { _ in
             self.animateTopHandOut()
         })
     }
@@ -92,9 +99,9 @@ class LaunchViewController: UIViewController {
         animations: {
             
             self.view.layoutIfNeeded()
-        }, completion: {
+        }, completion: { _ in
             // TODO: Should anything happen on completion
-            navigateToHome()
+            self.navigateToHome()
         })
     }
     
