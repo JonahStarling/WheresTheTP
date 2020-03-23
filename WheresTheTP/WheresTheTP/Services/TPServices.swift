@@ -11,6 +11,8 @@ import Firebase
 
 class TPServices {
     
+    static var uid: String?
+    
     func updateStock(place: TPPlace) {
         // TODO
         // This function is used to update the stock of a place

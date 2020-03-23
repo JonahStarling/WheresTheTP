@@ -7,6 +7,7 @@ target 'WheresTheTP' do
 
   # Pods for WheresTheTP
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
 
