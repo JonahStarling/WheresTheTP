@@ -10,6 +10,7 @@
 		2609CB989022D90AFB711EEE /* Pods_WheresTheTPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BCEAE9CE33DCA5E741F13C /* Pods_WheresTheTPTests.framework */; };
 		5C1CC368439E7C9146573BD2 /* Pods_WheresTheTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B9851A9BC07D2780511C1B /* Pods_WheresTheTP.framework */; };
 		8C9C056A24284E9E000F4DCC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C056924284E9E000F4DCC /* LaunchViewController.swift */; };
+		8C9C056D2429B49D000F4DCC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C056C2429B49D000F4DCC /* Utility.swift */; };
 		8CFD619624253B7D00E5B0EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619524253B7D00E5B0EE /* AppDelegate.swift */; };
 		8CFD619824253B7D00E5B0EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619724253B7D00E5B0EE /* SceneDelegate.swift */; };
 		8CFD619A24253B7D00E5B0EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD619924253B7D00E5B0EE /* HomeViewController.swift */; };
@@ -42,6 +43,7 @@
 		7480C5CE61D305BBE8045D1E /* Pods-WheresTheTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheresTheTP.debug.xcconfig"; path = "Target Support Files/Pods-WheresTheTP/Pods-WheresTheTP.debug.xcconfig"; sourceTree = "<group>"; };
 		8192DF4765E79A5300B5BBE2 /* Pods-WheresTheTPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheresTheTPTests.release.xcconfig"; path = "Target Support Files/Pods-WheresTheTPTests/Pods-WheresTheTPTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C9C056924284E9E000F4DCC /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		8C9C056C2429B49D000F4DCC /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		8CFD619224253B7D00E5B0EE /* WheresTheTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheresTheTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFD619524253B7D00E5B0EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CFD619724253B7D00E5B0EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C9C056B2429B487000F4DCC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C056C2429B49D000F4DCC /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		8CFD618924253B7D00E5B0EE = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		8CFD619424253B7D00E5B0EE /* WheresTheTP */ = {
 			isa = PBXGroup;
 			children = (
+				8C9C056B2429B487000F4DCC /* Utility */,
 				8CFD61C42425A33F00E5B0EE /* Services */,
 				8CFD61C32425A32D00E5B0EE /* Repository */,
 				8CFD61C22425A32300E5B0EE /* Data */,
@@ -375,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9C056D2429B49D000F4DCC /* Utility.swift in Sources */,
 				8CFD619A24253B7D00E5B0EE /* HomeViewController.swift in Sources */,
 				8CFD61CA2425A3A200E5B0EE /* TPRepository.swift in Sources */,
 				8CFD61BC24255B5C00E5B0EE /* Keys.swift in Sources */,
