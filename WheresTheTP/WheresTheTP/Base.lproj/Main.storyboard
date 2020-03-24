@@ -17,6 +17,7 @@
                         <color key="backgroundColor" red="0.22352941179999999" green="0.1529411765" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yvN-gT-gE8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,18 +107,18 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="NyZ-5u-Ciw" secondAttribute="bottom" id="0fg-QD-Ukn"/>
-                                    <constraint firstItem="iQi-Wy-aob" firstAttribute="leading" secondItem="CyM-NH-IAe" secondAttribute="leading" constant="-40" id="0gW-at-5qv"/>
                                     <constraint firstItem="5yU-h5-vj3" firstAttribute="top" secondItem="fis-yX-VDg" secondAttribute="bottom" constant="-55" id="26W-K2-9Do"/>
                                     <constraint firstAttribute="bottom" secondItem="eDi-qD-Dsr" secondAttribute="bottom" id="4D0-Lt-bQM"/>
+                                    <constraint firstItem="eDi-qD-Dsr" firstAttribute="leading" secondItem="5yU-h5-vj3" secondAttribute="trailing" constant="-162" id="8jE-Bn-ZuP"/>
                                     <constraint firstItem="NyZ-5u-Ciw" firstAttribute="top" secondItem="fis-yX-VDg" secondAttribute="bottom" constant="-55" id="K1T-AX-Za4"/>
                                     <constraint firstItem="vtC-N9-RG8" firstAttribute="top" secondItem="CyM-NH-IAe" secondAttribute="top" constant="-20" id="LVe-Or-EU1"/>
                                     <constraint firstItem="5yU-h5-vj3" firstAttribute="leading" secondItem="fis-yX-VDg" secondAttribute="trailing" constant="-85" id="Lci-nX-Utw"/>
                                     <constraint firstItem="fis-yX-VDg" firstAttribute="leading" secondItem="NyZ-5u-Ciw" secondAttribute="trailing" constant="-85" id="N8e-kF-Z7E"/>
                                     <constraint firstItem="vtC-N9-RG8" firstAttribute="centerX" secondItem="CyM-NH-IAe" secondAttribute="centerX" id="TrT-hb-lmK"/>
+                                    <constraint firstItem="NyZ-5u-Ciw" firstAttribute="leading" secondItem="iQi-Wy-aob" secondAttribute="trailing" constant="-157" id="dgP-tQ-2ba"/>
                                     <constraint firstAttribute="bottom" secondItem="5yU-h5-vj3" secondAttribute="bottom" id="eXv-Bn-iri"/>
                                     <constraint firstItem="fis-yX-VDg" firstAttribute="centerX" secondItem="CyM-NH-IAe" secondAttribute="centerX" id="sFY-80-ZEy"/>
                                     <constraint firstAttribute="bottom" secondItem="iQi-Wy-aob" secondAttribute="bottom" id="uky-Dd-LSo"/>
-                                    <constraint firstAttribute="trailing" secondItem="eDi-qD-Dsr" secondAttribute="trailing" constant="-150" id="vLn-eo-chC"/>
                                     <constraint firstItem="fis-yX-VDg" firstAttribute="top" secondItem="CyM-NH-IAe" secondAttribute="top" constant="130" id="yJU-YP-8Ng"/>
                                 </constraints>
                             </view>
@@ -137,11 +138,13 @@
                     <connections>
                         <outlet property="leftHand" destination="iQi-Wy-aob" id="gap-7C-3h8"/>
                         <outlet property="leftTP" destination="NyZ-5u-Ciw" id="Tk2-JJ-pw8"/>
+                        <outlet property="logoBottomLine" destination="iy4-UA-VAL" id="s5v-qn-WTX"/>
+                        <outlet property="logoTopLine" destination="JsL-uj-UqE" id="IG2-NK-IQq"/>
                         <outlet property="rightHand" destination="eDi-qD-Dsr" id="oX4-WN-dZw"/>
                         <outlet property="rightTP" destination="5yU-h5-vj3" id="UGg-vF-R3B"/>
                         <outlet property="topHand" destination="vtC-N9-RG8" id="h2Q-vq-0m3"/>
                         <outlet property="topTP" destination="fis-yX-VDg" id="nur-bc-yzJ"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LaunchToHome" animates="NO" modalPresentationStyle="fullScreen" id="9aC-NP-Nx4"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="launchToHome" animates="NO" id="9aC-NP-Nx4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcC-qH-Q2x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

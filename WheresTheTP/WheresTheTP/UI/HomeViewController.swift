@@ -19,12 +19,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     override func viewDidLoad() {
         super.viewDidLoad()
         loadMapView()
-        loadDummyData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         getUserLocation()
+        loadDummyData()
     }
     
     func getUserLocation() {
